@@ -40,14 +40,13 @@ int main(int argc, char *argv[])
     m_view->setTitle("Messaging");
     m_view->rootContext()->setContextProperty("application", &app);
     m_view->setResizeMode(QQuickView::SizeRootObjectToView);
+    m_view->engine()->rootContext()->setContextProperty("pushNotifier", &notif);
 
     const QUrl url("qrc:/qml/Main.qml");
     m_view->setSource(url);
 
     m_view->show();
 
-    QThread::sleep(10);
-    notif.send("Notification test3");
 
     return app.exec();
 }

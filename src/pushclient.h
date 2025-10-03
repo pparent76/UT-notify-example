@@ -32,7 +32,7 @@ public:
 
     // Send a notification
     bool send(const QJsonObject &message);
-    bool send(const QString &message);
+    Q_INVOKABLE bool send(const QString &message);
     // Update a notification
     bool update(const QString &tag, const QJsonObject &message);
 
