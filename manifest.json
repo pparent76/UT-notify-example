@@ -1,0 +1,21 @@
+{
+    "name": "notify.pparent",
+    "description": "Notify client",
+    "architecture": "@CLICK_ARCH@",
+
+    "title": "notify",
+    "hooks": {
+        "notify": {
+            "apparmor": "notify.apparmor",
+            "desktop":  "notify.desktop",
+            "content-hub": "content-hub.json"
+        },
+        "notify-notify": {
+        "apparmor": "notify-push.apparmor",
+        "push-helper": "notify-push-helper.json"
+        }   
+    },
+    "version": "0.3.2",
+    "maintainer": "Pierre Parent <pparent@nospam.com>",
+    "framework" : "ubuntu-sdk-20.04"
+}
