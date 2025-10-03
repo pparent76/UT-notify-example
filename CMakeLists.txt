@@ -41,8 +41,7 @@ install(FILES notify-push.apparmor DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES notify.apparmor DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES notify.desktop DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES push-apparmor.json DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(FILES pushexec DESTINATION ${CMAKE_INSTALL_PREFIX})
-
+install(PROGRAMS pushexec DESTINATION ${CMAKE_INSTALL_PREFIX})
 
 
 

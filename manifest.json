@@ -10,7 +10,7 @@
             "desktop":  "notify.desktop",
             "content-hub": "content-hub.json"
         },
-        "notify-notify": {
+        "push": {
         "apparmor": "notify-push.apparmor",
         "push-helper": "notify-push-helper.json"
         }   
